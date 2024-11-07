@@ -1,56 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background: black;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-* {
-	border: 1px dashed red;
-	min-height: 10px;
+.card {
+	width: 600px;
+	margin: 100px auto;
+	background: white;
 }
 
-.postcard {
-	background-color: white;
-	width: 400px;
-	height: 300px;
-	margin: auto;
+.header {
+	display: flex;
+	padding: 10px;
 }
 
-.postcard-header {
+.header img {
+	height: 70px;
+}
+
+.header h1 {
+	width: 100%;
+}
+
+.body {
 	display: flex;
 }
 
-.postcard-header img {
-	width: 50px;
-	height: 50px;
-}
-
-.postcard-header h1 {
-	width: 50px;
-	margin: 50px;
-}
-
-.postcard-body {
-	display: flex;
-}
-
-.body-left p:first-child {
-	margin-top: x;
-}
-
-.body-left,
-.body-right {
-	padding: 50pc;
+.body .left,
+.body .right {
+	width: 50%;
+	padding: 0 10px;
 }
 
 input {
-	border: none;
-	border-bottom: x;
+	width: 100%;
+	padding: 5px;
+	margin: 3px 0;
+	border: 0;
+	border-bottom: 1px solid #bdbdbd;
 }
 
-.postcard-footer {
+.footer {
 	text-align: center;
+	padding: 20px;
 }
 
 button {
-	background-color: black;
-	padding: 5pc;
+	padding: 15px 30px;
+	font-size: 20px;
 }
